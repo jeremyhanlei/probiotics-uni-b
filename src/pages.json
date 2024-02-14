@@ -1,22 +1,60 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/login/login",
-			"style": {
-				"navigationBarTitleText": "登录"
-			}
-		},
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "畅益动商家版"
-			}
-		},
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "畅益动商家版",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	}
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "首页"
+      }
+    },
+    {
+      "path": "pages/login/login",
+      "style": {
+        "navigationBarTitleText": "登录"
+      }
+    },
+    {
+      "path": "pages/purchased/purchased",
+      "style": {
+        "navigationBarTitleText": "采购"
+      }
+    },
+    {
+      "path": "pages/user/user",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    }
+  ],
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#2496AD",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/index_icon.png",
+        "selectedIconPath": "static/index_icon_sel.png"
+      },
+      {
+        "pagePath": "pages/purchased/purchased",
+        "text": "采购页",
+        "iconPath": "static/purchased_icon.png",
+        "selectedIconPath": "static/purchased_icon_sel.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "static/user_icon.png",
+        "selectedIconPath": "static/user_icon_sel.png"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "畅益动商家版",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  }
 }

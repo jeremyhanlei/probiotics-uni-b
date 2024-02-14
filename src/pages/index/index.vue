@@ -1,8 +1,20 @@
 <template>
   <view class="content">
-    <image class="logo" src="/static/logo.png"></image>
-    <view class="text-area">
-      <text class="title">{{ title }}</text>
+    <view class="banner">
+      <swiper class="swiper" indicator-dots="true" autoplay="true" circular="true" interval="2000">
+        <swiper-item>
+          <image
+            src="https://pic.rmb.bdstatic.com/bjh/news/0c9ba14fab58990cf592032559ac98bf.jpeg"
+            mode="aspectFill"
+          />
+        </swiper-item>
+        <swiper-item>
+          <image
+            src="https://pic.rmb.bdstatic.com/bjh/news/e0f92d5a10cf73227913cc8fca7303366725.png"
+            mode="aspectFill"
+          />
+        </swiper-item>
+      </swiper>
     </view>
   </view>
 </template>
@@ -11,12 +23,12 @@
 export default {
   data() {
     return {
-      title: 'Hello',
-    }
+      title: "Hello",
+    };
   },
   onLoad() {},
   methods: {},
-}
+};
 </script>
 
 <style>
@@ -25,24 +37,23 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 }
 
-.logo {
-  height: 200rpx;
-  width: 200rpx;
-  margin-top: 200rpx;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50rpx;
+.banner {
+  width: 100%;
 }
 
-.text-area {
-  display: flex;
-  justify-content: center;
+.swiper {
+height: 300rpx;
 }
 
-.title {
-  font-size: 36rpx;
-  color: #8f8f94;
-}
+/* .swiper-item {
+		display: flex;
+    width: 100%;
+		height: 300rpx;
+		line-height: 300rpx;
+		text-align: center;
+	} */
+
 </style>

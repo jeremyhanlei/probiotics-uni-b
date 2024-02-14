@@ -1,10 +1,7 @@
 <template>
   <view class="container">
-    <image
-        src="/static/logo.png"
-        mode="aspecFit"
-    />
-    <text class="title">畅益动采购系统商家版1.0</text>
+    <image src="/static/logo.png" mode="aspecFit" />
+    <text class="title">畅益动采购系统商家版</text>
     <view class="form">
       <text>账号</text>
       <input type="text" v-model="username" placeholder="请输入账号" />
@@ -14,7 +11,7 @@
     </view>
   </view>
 </template>
-  
+
 <script>
 import { ref } from "vue";
 
@@ -64,7 +61,7 @@ export default {
   },
 };
 </script>
-  
+
 <style scoped>
 .container {
   /* 显示类型设置为Flexbox布局,允许子元素在容器内进行灵活的排列。 */
@@ -79,16 +76,16 @@ export default {
 }
 
 .container image {
-    width: 100px;
-    height: 100px;
-    margin-top: 55px;
+  width: 100px;
+  height: 100px;
+  margin-top: 55px;
 }
 
-.title{
-    font-size: 22px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    color: rgb(30, 145, 126);
+.title {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: rgb(30, 145, 126);
 }
 
 .form {
@@ -98,8 +95,8 @@ export default {
 }
 
 .form text {
-    /* 字体加粗 */
-    font-weight: bold;
+  /* 字体加粗 */
+  font-weight: bold;
 }
 
 .form input {
@@ -112,13 +109,11 @@ export default {
 }
 
 .form button {
-    width: 200px;
-    background-color: rgb(30, 145, 126);
-     margin-top: 25px;
-     /* 字体颜色 */
-     color: #fff;
-     
+  width: 200px;
+  background-color: rgb(30, 145, 126);
+  margin-top: 25px;
+  /* 字体颜色 */
+  color: #fff;
 }
-
 
 </style>
